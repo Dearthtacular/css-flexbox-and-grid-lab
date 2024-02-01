@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Helvetica;
+    background-color: #005F5F;
+  }
+  
+  .container {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 350px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 70px 80px 50px;
+    filter: drop-shadow(5px 5px 15px #005152)
+  }
+
+#picAndName > img {
+    width: 95px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #51D08D;
+}
+
+#ratingAndTitle > img {
+    width: 80px;
+    height: auto;
+    margin: 2px;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    font-size: 17px;
+    margin: 0px;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 12px;
+    color: #22252E;
+    margin: 2px;
+}
+
+#onlineStatus {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    font-weight: 300;
+    font-size: 8.5px;
+    color: #C0C0C0;
+    background-color: #FFFFFF;
+}
+
+#rates :first-child {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 2px;
+}
+
+#rates :nth-child(2) {
+    font-weight: 300;
+    font-size: 12px;
+    margin: 2px;
+}
+
+#picAndName, #ratingAndTitle, #rates {
+    grid-column: span 2;
+}
+
+#picAndName, #ratingAndTitle, #rates, #phone, #SMS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#picAndName {
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+}
+
+.flex-horizontal-ctr {
+    justify-content: center;
+}
+
+#ratingAndTitle {
+    background-color: #F3F3F3;
+}
+
+#rates {
+    background-color: #FFFFFF;
+}
+
+#phone {
+    background-color: #52D18D;
+}
+
+#SMS {
+    background-color: #48BD7F;
+}
